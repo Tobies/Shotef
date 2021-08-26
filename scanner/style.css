@@ -1,0 +1,18 @@
+
+a {
+    visibility: hidden;
+}
+
+body {
+    background-color: #121212;
+}
+
+.label {
+    position: relative;
+    color:#60c8d9;
+    font-family: Tahoma;
+    font-size: 10vw;
+    text-decoration: underline;
+    text-align: center;
+    margin-top:10vh;
+}
