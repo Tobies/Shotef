@@ -1,0 +1,16 @@
+{
+    "name":"IDF-ShOTEF",
+    "short_name":"IDF-SHOTEF",
+    "start_url":".",
+    "background_color":"#121212",
+    "theme_color":"#121212",
+    "display":"standalone",
+    "icons": [
+        {
+            "src":"logo.png",
+            "sizes":"512x512",
+            "type":"image/png",
+            "purpose":"any"
+        }
+    ]
+}
