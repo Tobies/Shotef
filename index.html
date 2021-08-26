@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -8,9 +10,57 @@
       <meta name="mobile-web-app-capable" content="yes">
       <link rel="manifest" href="manifest.json">
    </head>
-   <button id="BTN-INDEXER">indexer</button>
-   <button id="BTN-SCANNER">scanner</button>
-   <button id="BTN-MAP">MAP</button>
+   <style>
+      .body {
+      background-color:#121212;
+      }
+      .lbl {
+      text-align: center;
+      padding-bottom: 10px;
+      color:aqua;
+      }
+      .line {
+      min-height: 1px;
+      background-color: aqua;
+      margin-bottom: 10px
+      }
+      .section {
+      min-height: 50px;
+      max-width: 100vw;
+      text-align: center;
+      margin-bottom:10px;
+      }
+      .button {
+      border: 0px;
+      padding-bottom:15px;
+      padding-top:15px;
+      min-width: 80vw;
+      border-radius:15px;
+      background-color: #1c1c1c;
+      color:white;
+      }
+      .credits {
+      position: fixed;
+      color: white;
+      text-align: center;
+      bottom: 10px;
+      min-width: 100%;
+      }
+   </style>
+   <body class="body">
+      <div class="lbl">מחסן שוטף</div>
+      <div class="line"></div>
+      <div class="section">
+         <button class="button" id="BTN-INDEXER">חיפוש פריטים</button>
+      </div>
+      <div class="section">
+         <button class="button" id="BTN-SCANNER">הזמנה חדשה</button>
+      </div>
+      <div class="section">
+         <button class="button" id="BTN-MAP">מפת המחסן</button>
+      </div>
+      <div class="credits">פותח על ידי רועי אואנונו</div>
+   </body>
    <script language="javascript" type="text/javascript" src="main.js"></script>
 </html>
 
