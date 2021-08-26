@@ -9,4 +9,18 @@ if ("serviceWorker" in navigator) {
 }
 
 
+function indexerClick() {
+    location.href = "./scanner/index.html"
+}
 
+function scannerClick() {
+
+}
+
+function mapClick() {
+
+}
+
+document.getElementById("BTN-INDEXER").onclick = indexerClick;
+document.getElementById("BTN-SCANNER").onclick = scannerClick;
+document.getElementById("BTN-MAP").onclick = mapClick;
