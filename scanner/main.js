@@ -1,7 +1,7 @@
 
 function onScanSuccess(decodedText, decodedResult) {
     if (decodedText.includes("https://tobies.github.io/IDF-QR-THINGY/index.html#data=")) {
-        console.log("VALID CODE!")
+        location.href(decodedText)
     } else {
         console.log("INVALID CODE! " + decodedText)
     }
