@@ -1,5 +1,6 @@
 
 function onScanSuccess(decodedText, decodedResult) {
+    alert(decodedText);
     if (decodedText.includes("https://tobies.github.io/IDF-QR-THINGY/index.html#data=")) {
         location.href("./orders-manager/index.html#data=" + decodedText.replace("https://tobies.github.io/IDF-QR-THINGY/index.html#data=", ""))
     } else {
