@@ -23,6 +23,7 @@ function findButton(context) {
 function applyStyle() {
     console.log("style")
     document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:50px;border-radius: 15px;background-color: #EEEEFF;border:0px transparent;padding: 0px;";
+    document.getElementById("qr-reader__dashboard_section_csr").style = "display: block;text-align: center;background-color: #EEEEFF; border-radius: 0px 0px; 15px; 15px";
 }
 
 var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: 250});
