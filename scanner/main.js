@@ -2,7 +2,7 @@
 const qrCodeSuccessCallback = message => { 
     console.log(message);
     if (message.includes("https://tobies.github.io/IDF-QR-THINGY/index.html#data=")) {
-        location.href("./orders-manager/index.html#data=" + message.replace("https://tobies.github.io/IDF-QR-THINGY/index.html#data=", ""));
+        location.href = "./orders-manager/index.html#data=" + message.replace("https://tobies.github.io/IDF-QR-THINGY/index.html#data=", "");
 
     }
 }
