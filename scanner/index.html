@@ -12,3 +12,22 @@
    <script language="javascript" type="text/javascript" src="main.js"></script>
 </html>
 
+<div class="back-btn" id="back-btn">◄</div>
+<style>
+    .back-btn {
+        color:#60c8d9;
+        background-color:black;
+        border-radius: 15px;
+        padding: 15px;
+        position:fixed;
+        bottom: 10px;
+        left:10px;
+        text-align: center;
+    }
+</style>
+<script>
+    function clickBack() {
+        location.href = "../"
+    }
+    document.getElementById("back-btn").onclick = clickBack;
+</script>
