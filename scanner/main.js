@@ -3,6 +3,8 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText.includes("https://tobies.github.io/IDF-QR-THINGY/index.html#data=")) {
         console.log("VALID CODE, REDIRECTING")
         location.href("./orders-manager/index.html#data=" + decodedText.replace("https://tobies.github.io/IDF-QR-THINGY/index.html#data=", ""))
+        html5QrcodeScanner.stop();
+        html5QrcodeScanner.clear();
     } else {
         
         console.log("INVALID CODE! " + decodedText)
