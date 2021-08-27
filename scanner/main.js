@@ -1,11 +1,14 @@
 
-function onScanSuccess(decodedText, decodedResult) {
-    if (decodedText.includes("https://tobies.github.io/IDF-QR-THINGY/index.html#data=")) {
-        location.href("./orders-manager/index.html#data=" + decodedText.replace("https://tobies.github.io/IDF-QR-THINGY/index.html#data=", ""))
-    } else {
-        console.log("INVALID CODE! " + decodedText)
+const qrCodeSuccessCallback = message => { 
+    console.log(message);
+    if (message.includes("https://tobies.github.io/IDF-QR-THINGY/index.html#data=")) {
+        html5QrcodeScanner.clear();
+        location.href("./orders-manager/index.html#data=" + message.replace("https://tobies.github.io/IDF-QR-THINGY/index.html#data=", ""))
+
     }
 }
+const config = { fps: 10, qrbox: 250 };
+
 
 function findButton(context) {
     elements = document.getElementsByTagName("button")
@@ -18,7 +21,7 @@ function findButton(context) {
 }
 
 function startScan() {
-    html5QrcodeScanner.html5Qrcode.start({ facingMode: "environment" }, { fps: 10, qrbox: 250, aspectRatio:1.0}, onScanSuccess)
+    html5QrcodeScanner.html5Qrcode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
     document.getElementById("start-btn").onclick = stopScan;
     document.getElementById("start-btn").textContent = "הפסק לסרוק"
 }
@@ -38,8 +41,8 @@ function applyStyle() {
 
 
 
-var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: 250, aspectRatio:1.0});
-html5QrcodeScanner.render(onScanSuccess);
+var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", config);
+html5QrcodeScanner.render(qrCodeSuccessCallback);
 document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 10vw;margin-top:50px;border-radius: 25px;background-color: #1C1C1C;border:0px transparent;padding: 0px;";
 document.getElementById("qr-reader__status_span").hidden = true;
 document.getElementById("qr-reader__scan_region").style="width: 100%;min-height: 20vw;text-align: center;"
