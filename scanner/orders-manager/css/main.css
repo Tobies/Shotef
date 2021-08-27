@@ -379,4 +379,32 @@ tr:nth-child(even) {
     top: 2vh;
     max-width: 86vw;
   }
+   
+  .map-container {
+         position:fixed;
+         padding:10px;
+         padding-bottom: 1vh;
+         border-radius: 15px;
+         background-color:#1f1f1f;
+         top:1vh;
+         text-align: center;
+         width:91vw;
+      }
+      .map {
+         width:89vw;
+         height: 87vh;
+         background-color: white;
+         padding:5px;
+         border-radius: 5px;
+      }
+      .map-btn {
+         background-color:#333333;
+         border:0px;
+         padding:15px;
+         margin-top:1vh;
+         width:80vw;
+         border-radius: 15px;
+         color:white;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      }
 }
