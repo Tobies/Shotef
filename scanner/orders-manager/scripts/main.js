@@ -266,5 +266,16 @@ function updateUI(index) {
 	createCookie();
     }
 }
+function mapClick() {
+    document.getElementById("map-container").hidden = null;
+}
+function closeMap() {
+    document.getElementById("map-container").hidden = true;
+    
+}
+document.getElementById("LBL-ShelfNum").onclick = mapClick;
+document.getElementById("map-btn").onclick = closeMap;
+
+
 
 setup();
