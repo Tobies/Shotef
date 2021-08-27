@@ -389,6 +389,7 @@ tr:nth-child(even) {
          top:1vh;
          text-align: center;
          width:91vw;
+         margin-left:5vw;
       }
       .map {
          width:89vw;
