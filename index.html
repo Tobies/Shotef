@@ -53,6 +53,35 @@
       width:83vw;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
       }
+      .map-container {
+         visibility: hidden;
+         position:fixed;
+         padding:10px;
+         padding-bottom: 1vh;
+         border-radius: 15px;
+         background-color:#1f1f1f;
+         top:1vh;
+         text-align: center;
+         width:91vw;
+      }
+      .map {
+         width:89vw;
+         height: 87vh;
+         background-color: white;
+         padding:5px;
+         border-radius: 5px;
+      }
+      .map-btn {
+         background-color:#333333;
+         border:0px;
+         padding:15px;
+         margin-top:1vh;
+         width:80vw;
+         border-radius: 15px;
+         color:white;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+      }
    </style>
    <body class="body">
       <div class="lbl">מחסן שוטף</div>
@@ -67,6 +96,7 @@
          <button class="button" id="BTN-MAP">מפת המחסן</button>
       </div>
       <div class="credits">אפליקציה שפותחה על ידי רועי אואנונו למען יעול ונוחות חיילי מחסן שוטף לציוד רפואי בבסיס טירה 6013</div>
+      <div class="map-container"><img src="map.png" class="map"><button class="map-btn" id="map-btn">חזור</button></div>
    </body>
    <script language="javascript" type="text/javascript" src="main.js"></script>
 </html>
