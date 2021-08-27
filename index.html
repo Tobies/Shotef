@@ -13,25 +13,28 @@
       <link rel="manifest" href="manifest.json">
    </head>
    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
       .body {
       background-color:#121212;
+      background-image: linear-gradient(-61deg, #333333, #121212);
+      margin:0px;
+      width: 100vw;
+      height: 100vh;
       }
       .lbl {
       text-align: center;
       padding-bottom: 10px;
-      color:aqua;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-      }
-      .line {
-      min-height: 1px;
-      background-color: aqua;
-      margin-bottom: 10px
+      color:#60C8D9;
+      font-family: 'Rubik', sans-serif;
+      margin-top:10vh;
+      font-size: 7.5vw;
+      margin-bottom:10vh;
       }
       .section {
       min-height: 50px;
       max-width: 100vw;
       text-align: center;
-      margin-bottom:10px;
+      margin-bottom:25px;
       }
       .button {
       border: 0px;
@@ -39,19 +42,21 @@
       padding-top:15px;
       min-width: 80vw;
       border-radius:15px;
-      background-color: #1c1c1c;
-      color:white;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      background-color: #60C8D9;
+      color:#1F1F1F;
+      font-size: 5vw;
+      font-family: 'Rubik', sans-serif;
       }
       .credits {
       position:fixed;
       text-align:center;
-      background-color: #dddddd;
+      background-color: transparent;
       padding:25px;
       border-radius:25px;
       bottom: 25px;
       width:83vw;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      color:#60c8d9;
+      font-family: 'Rubik', sans-serif;
       }
       .map-container {
          position:fixed;
@@ -83,7 +88,6 @@
    </style>
    <body class="body">
       <div class="lbl">מחסן שוטף</div>
-      <div class="line"></div>
       <div class="section">
          <button class="button" id="BTN-INDEXER">חיפוש פריטים</button>
       </div>
