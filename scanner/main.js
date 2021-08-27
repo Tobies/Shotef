@@ -21,12 +21,12 @@ function findButton(context) {
 
 function applyStyle() {
     console.log("style")
-    document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:18vh;border-radius: 15px;background-color: #EEEEFF;border:0px transparent;position: relative;padding: 0px;";
+    document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:50px;border-radius: 15px;background-color: #EEEEFF;border:0px transparent;padding: 0px;";
 }
 
 var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: 100});
 html5QrcodeScanner.render(onScanSuccess);
-document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:18vh;border-radius: 25px;background-color: #1C1C1C;border:0px transparent;position: relative;padding: 0px;";
+document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:50px;border-radius: 25px;background-color: #1C1C1C;border:0px transparent;padding: 0px;";
 document.getElementById("qr-reader__status_span").style="padding: 5px 7px;font-size: 14px;background: transparent none repeat scroll 0% 0%;border: 1px solid rgba(0, 0, 0, 0);color: rgb(17, 17, 17);float:left; color: white;";
 document.getElementById("qr-reader__scan_region").style="width: 100%;min-height: 20vw;text-align: center;"
 findButton("Request Camera Permissions").style="border-radius: 10px; border-color: transparent; padding:5px; background-color: #60C8D9; margin-top:25vw"
