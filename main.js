@@ -10,11 +10,11 @@ if ("serviceWorker" in navigator) {
 
 
 function indexerClick() {
-    location.href = "./scanner/index.html"
+    location.href = "./indexer/index.html"
 }
 
 function scannerClick() {
-
+    location.href = "./scanner/index.html"
 }
 
 function mapClick() {
