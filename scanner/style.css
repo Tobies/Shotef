@@ -3,16 +3,20 @@ a {
     visibility: hidden;
 }
 
-body {
-    background-color: #121212;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+ .body {
+      background-color:#121212;
+      background-image: linear-gradient(-61deg, #333333, #121212);
+      margin:0px;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      }
 .label {
     position: relative;
     color:#60c8d9;
-    font-family: Tahoma;
+    font-family: 'Rubik', sans-serif;
     font-size: 10vw;
-    text-decoration: underline;
     text-align: center;
     margin-top:10vh;
 }
