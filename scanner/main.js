@@ -24,7 +24,7 @@ function applyStyle() {
     document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:18vh;border-radius: 15px;background-color: #EEEEFF;border:0px transparent;position: relative;padding: 0px;";
 }
 
-var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: 250});
+var html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: 100});
 html5QrcodeScanner.render(onScanSuccess);
 document.getElementById("qr-reader").style="width:80vw;height:80vw;margin-left: 8vw;margin-top:18vh;border-radius: 25px;background-color: #1C1C1C;border:0px transparent;position: relative;padding: 0px;";
 document.getElementById("qr-reader__status_span").style="padding: 5px 7px;font-size: 14px;background: transparent none repeat scroll 0% 0%;border: 1px solid rgba(0, 0, 0, 0);color: rgb(17, 17, 17);float:left; color: white;";
