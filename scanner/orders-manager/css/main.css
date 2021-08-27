@@ -37,6 +37,7 @@ html {
 
 .body {
   background-color: #121212;
+   overscroll-behavior-y: contain;
 }
 
 .infotext {
