@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html translate="no">
+   <head>
+      <meta charset="utf-8"/>
+      <title>Shotef</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="theme-color" content="#121212">
+   </head>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+      body {
+      background-color:#121212;
+      background-image: linear-gradient(-61deg, #333333, #121212);
+      margin:0px;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      }
+      .lbl {
+      text-align: center;
+      padding-bottom: 10px;
+      color:#60C8D9;
+      font-family: 'Rubik', sans-serif;
+      margin-top:10vh;
+      font-size: 7.5vw;
+      margin-bottom:10vh;
+      }
+      .section {
+      min-height: 50px;
+      max-width: 100vw;
+      text-align: center;
+      margin-bottom:25px;
+      }
+      .button {
+      border: 0px;
+      padding-bottom:15px;
+      padding-top:15px;
+      min-width: 80vw;
+      border-radius:15px;
+      background-color: #60C8D9;
+      color:#1F1F1F;
+      font-size: 5vw;
+      font-family: 'Rubik', sans-serif;
+      }
+      .text-input {
+         border: -2px;
+         padding-bottom:15px;
+         padding-top:15px;
+         min-width: 80vw;
+         border-radius:15px;
+         background-color:#1F1F1F;
+         border-color:#60C8D9;
+         font-size: 4vw;
+         color: #60C8D9;
+         font-family: 'Rubik', sans-serif;
+         text-align: center;
+      }
+      .info {
+      position:fixed;
+      text-align:center;
+      background-color: transparent;
+      padding:25px;
+      border-radius:25px;
+      bottom: 25px;
+      width:83vw;
+      color:#60c8d9;
+      font-family: 'Rubik', sans-serif;
+      }
+   </style>
+   <body class="body">
+      <div class="lbl">פתיחה ידנית</div>
+      <div class="section">
+         <input class="text-input" id="INPUT-FIELD" placeholder="הזן קישור להזמנה">
+      </div>
+      <div class="section">
+         <button class="button" id="BTN-NAVIGATE">פתיחה ידנית</button>
+      </div>
+      <div class="info">הזן קישור אשר נסרק מהקוד שצורף להזמנה שלך</div>
+   </body>
+   <script language="javascript" type="text/javascript" src="main.js"></script>
+   <div class="back-btn" id="back-btn">◄</div>
+   <style>
+       .back-btn {
+           color:#60c8d9;
+           background-color:black;
+           border-radius: 15px;
+           padding: 15px;
+           position:fixed;
+           bottom: 10px;
+           left:10px;
+           text-align: center;
+       }
+   </style>
+   <script>
+       function clickBack() {
+           location.href = "../"
+       }
+       document.getElementById("back-btn").onclick = clickBack;
+   </script>
+</html>
+

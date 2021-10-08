@@ -17,6 +17,10 @@ function scannerClick() {
     location.href = "./scanner/index.html"
 }
 
+function manualClick() {
+    location.href = "./manual/index.html"
+}
+
 function mapClick() {
     document.getElementById("map-container").hidden = null;
 }
@@ -27,5 +31,6 @@ function closeMap() {
 
 document.getElementById("BTN-INDEXER").onclick = indexerClick;
 document.getElementById("BTN-SCANNER").onclick = scannerClick;
+document.getElementById("BTN-MANUAL").onclick = manualClick;
 document.getElementById("BTN-MAP").onclick = mapClick;
 document.getElementById("map-btn").onclick = closeMap;
